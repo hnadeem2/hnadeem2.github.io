@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Diego Kleiman"
   avatar           : "profile.png"
-  bio              : "PhD candidate in Biophysics at University of Illinois at Urbana-Champaign"
+  bio              : "Ph.D. candidate in Biophysics at University of Illinois at Urbana-Champaign"
   location         : "Urbana, Illinois"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=diego+kleiman"
   googlescholar    : "https://scholar.google.com/citations?user=2UdsaRUAAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
