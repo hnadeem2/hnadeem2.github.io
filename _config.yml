@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Diego Kleiman"
+  name             : "Hassan Nadeem"
   avatar           : "profile.png"
-  bio              : "Ph.D. candidate in Biophysics at University of Illinois at Urbana-Champaign"
+  bio              : "Ph.D. student in Bioengineering at University of Illinois at Urbana-Champaign"
   location         : "Urbana, Illinois"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=diego+kleiman"
-  googlescholar    : "https://scholar.google.com/citations?user=2UdsaRUAAAAJ&hl=en"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=diego+kleiman"
+  googlescholar    : "https://https://scholar.google.com/citations?user=vFtQG3YAAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "diegoeduardok"
+  github           : "hnadeem2"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/diego-kleiman/"
-  orcid            : "https://orcid.org/0000-0002-3833-5872"
+  linkedin         : "https://www.linkedin.com/in/hassan-nadeem-960a8126/"
+  orcid            : "https://orcid.org/0009-0006-8718-8940"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "KleimanDiego"
+  twitter          : #"KleimanDiego"
   vine             :
   weibo            :
   xing             :
