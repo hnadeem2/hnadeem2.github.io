@@ -10,4 +10,5 @@ redirect_from:
 
 I am a Ph.D. student in Bioengineering at the University of Illinois, Urbana-Champaign. I am a member of the [Shukla group](https://shuklagroup.org/). 
 
-My research is focused on developing novel algorithms for enhanced sampling of biomolecular systems. I have also work on peptide materials for diverse applications.
+My research is focused on developing novel algorithms for enhanced sampling of biomolecular systems. I have also worked on peptide materials for diverse applications.
+
