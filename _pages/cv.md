@@ -1,12 +1,12 @@
 ---
 layout: archive
-title: "Resume"
+title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-Find my resume [here](http://hnadeem2.github.io/files/nadeem_hassan_resume.pdf).
+Download my current CV [here]({{ base_path }}/files/cv_nadeem_hassan.pdf).

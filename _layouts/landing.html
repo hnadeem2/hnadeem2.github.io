@@ -14,6 +14,28 @@ layout: compress
   <body class="landing-page">
 
     <main class="landing" role="main">
+      <section class="landing-profile" aria-label="Hassan Nadeem profile">
+        <img src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ site.author.name }}">
+        <div class="landing-profile__details">
+          {% if site.author.bio %}<p>{{ site.author.bio }}</p>{% endif %}
+          {% if site.author.location %}<p>{{ site.author.location }}</p>{% endif %}
+          <ul>
+            {% if site.author.linkedin %}
+              <li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+            {% endif %}
+            {% if site.author.github %}
+              <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+            {% endif %}
+            {% if site.author.googlescholar %}
+              <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+            {% endif %}
+            {% if site.author.orcid %}
+              <li><a href="{{ site.author.orcid }}">ORCID</a></li>
+            {% endif %}
+          </ul>
+        </div>
+      </section>
+
       <nav class="landing-nav" aria-label="Main navigation">
         <ul>
           {% for link in site.data.navigation.main %}

@@ -37,8 +37,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: clamp(3rem, 8vw, 8rem);
   min-height: 100vh;
   padding: 2rem;
+}
+
+.landing-profile {
+  max-width: 270px;
+  color: #898989;
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+  text-align: left;
+  opacity: 0;
+  animation: landing-fade-in 0.8s ease 0.15s forwards;
+
+  img {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 1.25rem;
+    border: 1px solid #2a2a2a;
+    filter: grayscale(35%) contrast(105%);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.015);
+  }
+
+  p {
+    margin: 0 0 0.7rem;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  ul {
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0.35rem 0;
+  }
+
+  a {
+    color: #aaa;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #e0d5c4;
+      outline: none;
+    }
+  }
 }
 
 .landing-nav {
@@ -46,7 +96,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
+    text-align: left;
   }
 
   li {
@@ -164,6 +214,26 @@ body.retro-theme {
   font-weight: 400;
 }
 
+.retro-theme #main {
+  max-width: 980px;
+}
+
+.retro-theme .archive,
+.retro-theme .page {
+  width: 100%;
+  padding-right: 0;
+}
+
+.retro-theme .page__inner-wrap,
+.retro-theme .archive {
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid #1f1f1f;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
+    #101010;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.24);
+}
+
 .retro-theme .page__content {
   font-family: "Courier Prime", "Courier New", Courier, monospace;
 
@@ -236,7 +306,11 @@ body.retro-theme {
 
 .retro-theme .archive__item {
   border-bottom: 1px solid #1a1a1a;
-  padding-bottom: 1em;
+  padding: 1.15em 0;
+
+  p {
+    color: #8e8e8e;
+  }
 }
 
 .retro-theme .pagination {
@@ -285,6 +359,22 @@ body.retro-theme {
 /* Responsive -------------------------------------------------------------- */
 
 @include breakpoint(max-width $small) {
+  .landing {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .landing-profile {
+    max-width: 100%;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
   .landing-nav a {
     font-size: 1.35rem;
   }
