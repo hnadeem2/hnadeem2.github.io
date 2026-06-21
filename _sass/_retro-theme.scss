@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Retro dark theme — minimal typewriter aesthetic
+   ========================================================================== */
+
+/* Landing page ----------------------------------------------------------- */
+
+.landing-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(40, 40, 40, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+  color: #a8a8a8;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+    z-index: 1;
+  }
+}
+
+.landing {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.landing-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  li {
+    margin: 0.85rem 0;
+    opacity: 0;
+    animation: landing-fade-in 0.7s ease forwards;
+
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{0.15 + ($i * 0.08)}s;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: "Special Elite", "Courier New", Courier, monospace;
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: #9a9a9a;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    transition: color 0.25s ease, transform 0.25s ease;
+
+    &::before {
+      content: "> ";
+      opacity: 0;
+      color: #6b6b6b;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover,
+    &:focus {
+      color: #e0d5c4;
+      transform: translateX(4px);
+      outline: none;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes landing-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Site-wide dark overrides ------------------------------------------------ */
+
+body.retro-theme {
+  background-color: #0f0f0f;
+  color: #b0b0b0;
+
+  ::selection {
+    background: rgba(196, 168, 130, 0.35);
+    color: #f0ebe3;
+  }
+
+  a {
+    color: #c4a882;
+
+    &:hover {
+      color: #e8dcc8;
+    }
+
+    &:visited {
+      color: #a89070;
+    }
+  }
+}
+
+/* Masthead ---------------------------------------------------------------- */
+
+.retro-theme .masthead {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #222;
+  backdrop-filter: blur(4px);
+
+  &__inner-wrap {
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    padding: 0.85em 1em;
+  }
+
+  a {
+    color: #9a9a9a;
+    font-family: "Special Elite", "Courier New", Courier, monospace;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #e0d5c4;
+    }
+  }
+
+  .masthead__menu-item--lg a {
+    font-size: 1.05rem;
+  }
+}
+
+/* Page content ------------------------------------------------------------ */
+
+.retro-theme .page__title {
+  font-family: "Special Elite", "Courier New", Courier, monospace;
+  color: #d4d4d4;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.retro-theme .page__content {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Special Elite", "Courier New", Courier, monospace;
+    color: #ccc;
+    font-weight: 400;
+  }
+}
+
+.retro-theme .archive__item-title a {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+}
+
+/* Sidebar / author profile ------------------------------------------------ */
+
+.retro-theme .sidebar {
+  .author__name {
+    font-family: "Special Elite", "Courier New", Courier, monospace;
+    color: #d4d4d4;
+    font-weight: 400;
+  }
+
+  .author__bio,
+  .author__urls li {
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+    color: #888;
+  }
+
+  .author__avatar img {
+    border: 1px solid #333;
+    filter: grayscale(20%);
+  }
+
+  .btn--inverse {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #aaa;
+    font-family: "Special Elite", monospace;
+
+    &:hover {
+      background-color: #222;
+      color: #e0d5c4;
+    }
+  }
+}
+
+/* Footer ------------------------------------------------------------------ */
+
+.retro-theme .page__footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid #1e1e1e;
+  color: #555;
+
+  a {
+    color: #666;
+
+    &:hover {
+      color: #999;
+    }
+  }
+}
+
+.retro-theme .page__footer-copyright {
+  font-family: "Courier Prime", "Courier New", Courier, monospace;
+  letter-spacing: 0.02em;
+}
+
+/* Archive & misc ---------------------------------------------------------- */
+
+.retro-theme .archive__item {
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 1em;
+}
+
+.retro-theme .pagination {
+  font-family: "Courier Prime", monospace;
+}
+
+.retro-theme .greedy-nav {
+  background: transparent;
+
+  .hidden-links {
+    background: #141414;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+    &:after {
+      border-color: #141414 transparent;
+    }
+
+    a:hover {
+      background: #1e1e1e;
+    }
+  }
+}
+
+.retro-theme .author__urls {
+  background: #141414;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+  @include breakpoint($large) {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.retro-theme .page__content code,
+.retro-theme .page__content pre {
+  background-color: #161616;
+  border: 1px solid #252525;
+  color: #c4c4c4;
+}
+
+.retro-theme .page__content blockquote {
+  border-left: 3px solid #333;
+  color: #888;
+}
+
+/* Responsive -------------------------------------------------------------- */
+
+@include breakpoint(max-width $small) {
+  .landing-nav a {
+    font-size: 1.35rem;
+  }
+}

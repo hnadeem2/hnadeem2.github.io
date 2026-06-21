@@ -1,0 +1,36 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="landing-page">
+
+    <main class="landing" role="main">
+      <nav class="landing-nav" aria-label="Main navigation">
+        <ul>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li>
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </main>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
