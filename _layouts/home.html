@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" class="home-page" role="main">
+  <section class="home-intro">
+    <img class="home-intro__photo" src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ site.author.name }}">
+    <div class="home-intro__copy">
+      <h1>{{ site.author.name }}</h1>
+      <p class="home-intro__role">{{ site.author.bio }}</p>
+      <p class="home-intro__place">{{ site.author.location }}</p>
+      <ul class="home-intro__links">
+        {% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email</a></li>{% endif %}
+        {% if site.author.linkedin %}<li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>{% endif %}
+        {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>{% endif %}
+        {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>{% endif %}
+        {% if site.author.orcid %}<li><a href="{{ site.author.orcid }}">ORCID</a></li>{% endif %}
+      </ul>
+      <a class="home-intro__cv" href="{{ base_path }}/files/cv_nadeem_hassan.pdf">Download CV</a>
+    </div>
+  </section>
+
+  <div class="home-body">
+    {{ content }}
+  </div>
+</div>
