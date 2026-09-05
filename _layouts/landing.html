@@ -20,6 +20,9 @@ layout: compress
           {% if site.author.bio %}<p>{{ site.author.bio }}</p>{% endif %}
           {% if site.author.location %}<p>{{ site.author.location }}</p>{% endif %}
           <ul>
+            {% if site.author.email %}
+              <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+            {% endif %}
             {% if site.author.linkedin %}
               <li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>
             {% endif %}

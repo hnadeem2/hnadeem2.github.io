@@ -1,7 +1,7 @@
 ---
 title: "BIOE 210: Linear Algebra for Biomedical Data Science"
 collection: teaching
-type: "Undergraduate/Graduate course"
+type: "Teaching Assistant"
 permalink: /teaching/2025-fall-teaching-1
 venue: "University of Illinois at Urbana-Champaign, Department of Bioengineering"
 date: 2025-09-01

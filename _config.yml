@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Hassan Nadeem"
 title_separator          : "-"
 name                     : &name "Hassan Nadeem"
-description              : &description "PhD student at University of Illinois at Urbana-Champaign"
+description              : &description "Computational scientist and Bioengineering Ph.D. candidate at UIUC developing machine learning and molecular simulation methods for protein conformational ensembles."
 url                      : https://hnadeem2.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hnadeem2/hnadeem2.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Hassan Nadeem"
   avatar           : "profile_new.jpg"
-  bio              : "Ph.D. student in Bioengineering at University of Illinois at Urbana-Champaign"
+  bio              : "Computational scientist and Bioengineering Ph.D. candidate at the University of Illinois Urbana-Champaign"
   location         : "Urbana, Illinois"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=diego+kleiman"
   googlescholar : "https://scholar.google.com/citations?user=vFtQG3YAAAAJ&hl=en"
-  email            :
+  email            : "hnadeem2@illinois.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

@@ -1,7 +1,7 @@
 ---
 title: "BIOE 485: Computational Mathematics for Machine Learning and Imaging"
 collection: teaching
-type: "Undergraduate/Graduate course"
+type: "Teaching Assistant"
 permalink: /teaching/2024-fall-teaching-1
 venue: "University of Illinois at Urbana-Champaign, Department of Bioengineering"
 date: 2024-09-01
