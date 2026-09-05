@@ -17,9 +17,10 @@ layout: compress
       <section class="landing-profile" aria-label="Hassan Nadeem profile">
         <img src="{{ site.author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ site.author.name }}">
         <div class="landing-profile__details">
-          {% if site.author.bio %}<p>{{ site.author.bio }}</p>{% endif %}
-          {% if site.author.location %}<p>{{ site.author.location }}</p>{% endif %}
-          <ul>
+          <h1>{{ site.author.name }}</h1>
+          {% if site.author.bio %}<p class="landing-profile__bio">{{ site.author.bio }}</p>{% endif %}
+          {% if site.author.location %}<p class="landing-profile__location">{{ site.author.location }}</p>{% endif %}
+          <ul class="landing-profile__links">
             {% if site.author.email %}
               <li><a href="mailto:{{ site.author.email }}">Email</a></li>
             {% endif %}
@@ -36,6 +37,9 @@ layout: compress
               <li><a href="{{ site.author.orcid }}">ORCID</a></li>
             {% endif %}
           </ul>
+          <p class="landing-profile__cv">
+            <a href="{{ base_path }}/files/cv_nadeem_hassan.pdf">Download CV</a>
+          </p>
         </div>
       </section>
 

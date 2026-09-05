@@ -9,4 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Download my current CV [here]({{ base_path }}/files/cv_nadeem_hassan.pdf).
+A current curriculum vitae is available as a PDF.
+
+<p><a class="btn-cv" href="{{ base_path }}/files/cv_nadeem_hassan.pdf">Download CV</a></p>
