@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a Bioengineering Ph.D. candidate at the University of Illinois Urbana-Champaign in the [Shukla group](https://shuklagroup.org/). My research uses machine learning and molecular simulation to study protein and peptide conformational ensembles—how sequence, structure, and dynamics relate to function.
+I am a computational scientist at the University of Illinois Urbana-Champaign. I build machine-learning models, numerical simulations, and HPC workflows for high-dimensional scientific problems. The through-line is the same across domains: represent a complex system, search it efficiently, and rank options under competing constraints.
 
-I build GPU-based simulation and learning workflows on HPC systems, and I work with experimental collaborators on peptide screening and single-molecule measurements. Across this work I have 7 papers and preprints (5 first or co-first author).
+That background includes nuclear engineering—optimization, reactor-physics calculations, and scientific computing for core and fuel-cycle design—and biomolecular modeling, where I now develop adaptive sampling, generative models, and simulation-based analyses of proteins and peptides in the [Shukla group](https://shuklagroup.org/). I also write production research software and work with experimental collaborators. Across this work I have 7 papers and preprints (5 first or co-first author).
 
 ## Software
 
@@ -19,6 +19,6 @@ I build GPU-based simulation and learning workflows on HPC systems, and I work w
 
 ## Nuclear engineering
 
-Before the Ph.D. I worked as a nuclear engineer. That included graduate research on computational reactor-core design, several years as a scientist at the Pakistan Atomic Energy Commission, and a period of on-site work at a nuclear power plant.
+Before my current research I worked as a nuclear engineer, including graduate work on computational reactor-core design and several years as a scientist at the Pakistan Atomic Energy Commission.
 
 [Nuclear experience](/nuclear/)
