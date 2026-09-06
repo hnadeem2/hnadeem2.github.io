@@ -1,14 +1,14 @@
 ---
 permalink: /nuclear/
-title: "Nuclear Experience"
+title: "Nuclear Engineering"
 excerpt: "Nuclear engineering research and industrial experience"
 author_profile: false
 ---
 
-My path into computational science started in nuclear engineering, not biology. After a mathematics degree at NUST, I completed an M.S. in nuclear engineering at the Pakistan Institute of Engineering and Applied Sciences (PIEAS). The master’s project asked how to place fuel in a light-water reactor when several goals pull in different directions—operations, performance, and safety. I wrote optimization methods for that problem and used reactor-physics calculations to compare candidate loading patterns. PIEAS later recognized that work with its Excellence in Research Award.
+I began my career in nuclear engineering. After a B.S. in mathematics at the National University of Sciences and Technology (NUST), I completed an M.S. in nuclear engineering at the Pakistan Institute of Engineering and Applied Sciences (PIEAS). My thesis developed multi-objective optimization methods for light-water reactor core loading patterns, accounting for operational, performance, and safety constraints. I used reactor-physics calculations and scientific computing to evaluate candidate loading patterns. This work received the PIEAS Excellence in Research Award (2017).
 
-I then spent four years as a scientist at the Pakistan Atomic Energy Commission, first in a junior role and later as a senior scientist. The computational thread continued: I built and applied optimization algorithms for fuel-cycle design on pressurized-water reactors. Alongside that, I took on quality-assurance work—internal audits, follow-up on corrective actions, and helping groups stay aligned with organizational and regulatory requirements. I also taught radiation protection and nuclear safety, including large annual training cohorts of officers and technicians, and helped organize technical workshops and reviews with national and international nuclear bodies.
+I then spent four years as a scientist at the Pakistan Atomic Energy Commission, first as a junior scientist and later as a senior scientist. I developed and implemented computational optimization algorithms for pressurized light-water reactor core loading and fuel-cycle design. I also served as a quality assurance engineer, conducting internal audits, coordinating corrective actions, and supporting compliance with organizational and regulatory standards. In parallel, I taught radiation protection and nuclear safety, including annual training for approximately 300 officers and technicians, and helped organize technical workshops and peer reviews with national and international organizations, including PNRA, IAEA, and WANO.
 
-Part of this time was spent on site at a nuclear power plant. I am not describing the facility or the day-to-day assignments in detail here; the short version is that I worked with plant staff on operations, maintenance, and radiation-protection problems in a live industrial setting, not only at a desk.
+I completed on-the-job training at a nuclear power plant. The rotations covered reactor operations, nuclear-island maintenance, and health physics. I also provided radiation protection training for plant personnel in support of operational and regulatory safety requirements.
 
-The same habits—numerical optimization, scientific computing, and ranking options under competing constraints—now sit underneath the adaptive-sampling and machine-learning methods I develop for proteins.
+The same technical foundation, including numerical optimization, scientific computing, and comparison of design options under competing constraints, now supports my work on adaptive sampling and machine learning for biomolecular systems.
