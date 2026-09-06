@@ -3,6 +3,7 @@ title: "Pi-Ensemble"
 excerpt: "Modular Python software with configurable structure-prediction, inverse-folding, and interpolation backends; includes reproducible workflows, visualization utilities, testing, and containerized deployment."
 collection: portfolio
 type: "Open-source software"
+link: "https://github.com/ShuklaGroup/Pi-Ensemble"
 permalink: /software/pi-ensemble
 date: 2026-08-12
 venue: "github.com/ShuklaGroup/Pi-Ensemble"

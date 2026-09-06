@@ -3,6 +3,7 @@ title: "AdaptivePy"
 excerpt: "Installable Python package with a unified API for adaptive simulation, configurable sampling policies, clustering and seed selection, CLI/YAML workflows, documentation, testing, and reproducible run metadata."
 collection: portfolio
 type: "Open-source software"
+link: "https://github.com/ShuklaGroup/AdaptivePy"
 permalink: /software/adaptivepy
 date: 2026-08-04
 venue: "github.com/ShuklaGroup/AdaptivePy"

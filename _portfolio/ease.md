@@ -3,6 +3,7 @@ title: "EASE"
 excerpt: "Reusable software organized around simulation, policy evaluation, ranking, and benchmarking components for comparing adaptive-sampling strategies."
 collection: portfolio
 type: "Open-source software"
+link: "https://github.com/ShuklaGroup/EASE"
 permalink: /software/ease
 date: 2025-04-22
 venue: "github.com/ShuklaGroup/EASE"
