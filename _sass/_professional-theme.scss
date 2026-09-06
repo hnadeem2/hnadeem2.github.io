@@ -199,8 +199,27 @@ body.site-theme {
   line-height: 1.7;
   color: #333333;
 
+  h2 {
+    margin: 2rem 0 0.7rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111111;
+  }
+
   p {
     margin: 0 0 1.1rem;
+  }
+
+  ul {
+    margin: 0 0 1.1rem;
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin: 0.35rem 0;
   }
 
   a {
