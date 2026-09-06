@@ -127,8 +127,9 @@ body.site-theme {
 
 .home-intro__photo {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  display: block;
   border-radius: 6px;
   border: 1px solid #e6e6e6;
 }
@@ -370,7 +371,7 @@ body.site-theme {
 
   .home-intro__photo {
     width: 140px;
-    height: 140px;
+    height: auto;
   }
 
   .home-intro__copy h1 {
